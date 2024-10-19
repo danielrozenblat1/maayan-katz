@@ -1,0 +1,68 @@
+.title {
+    font-size: 3rem;
+    font-family: "Assistant";
+    text-align: center;
+    margin: 1% auto;
+    text-shadow: 1px 4px 2px rgba(120, 120, 120, 0.2);
+    direction: rtl;
+}
+
+@media (max-width: 1250px) {
+    .title {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 1150px) {
+    .title {
+        font-size: 2.6rem;
+    }
+}
+
+@media (max-width: 1050px) {
+    .title {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .title {
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .title {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .title {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .title {
+        font-size: 1.5rem;
+    }
+}

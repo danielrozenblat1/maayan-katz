@@ -1,0 +1,6 @@
+@import url("./fonts/font.css");
+body{
+    background: linear-gradient(135deg, rgba(249,247,241,1) 0%, rgba(238,228,224,1) 30%, rgba(249,247,241,1) 60%, rgba(238,228,224,1) 90%);
+    overflow-x: hidden;
+    
+}

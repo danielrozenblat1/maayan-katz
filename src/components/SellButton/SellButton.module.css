@@ -1,0 +1,63 @@
+.pinkButton {
+    font-family: 'Assistant', sans-serif;
+    font-size: 1.2rem;
+    width: 350px;
+    color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 207, 215, 0.975);
+    padding: 20px 40px;
+    border: none;
+    border-radius: 15px;
+    margin: 20px auto;
+    direction: rtl;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 
+      0 4px 6px rgba(167, 153, 138, 0.35),
+      inset 0 1px 0 rgba(240, 232, 232, 0.5),
+      inset 0 -2px 5px rgba(131, 125, 129, 0.25);
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    animation: intermittentWiggle 6s ease-in-out infinite;
+    transform-origin: center center;
+  }
+  
+  .pinkButton:hover {
+    transform: translateY(-2px);
+  }
+  
+  .pinkButton:active {
+    transform: translateY(1px);
+    box-shadow: 
+      0 2px 4px rgba(255, 105, 180, 0.2), 
+      inset 0 1px 0 rgba(255, 255, 255, 0.4),
+      inset 0 -1px 3px rgba(255, 20, 147, 0.1);
+  }
+  
+  @keyframes intermittentWiggle {
+    0%, 87.5%, 100% { transform: rotate(0deg); }
+    88.75% { transform: rotate(-2deg); }
+    90% { transform: rotate(2deg); }
+    91.25% { transform: rotate(-2deg); }
+    92.5% { transform: rotate(2deg); }
+    93.75% { transform: rotate(-2deg); }
+    95% { transform: rotate(2deg); }
+    96.25% { transform: rotate(-2deg); }
+    97.5% { transform: rotate(2deg); }
+    98.75% { transform: rotate(-2deg); }
+  }
+  
+  @media (max-width: 400px) {
+    .pinkButton {
+      width: 300px;
+      font-size: 1.1rem;
+      
+      padding: 15px 30px;
+    }
+  }
