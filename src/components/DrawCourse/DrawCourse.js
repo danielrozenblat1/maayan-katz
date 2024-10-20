@@ -1,10 +1,36 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './DrawCourse.module.css';
 import result1 from "../../images/תוצאות 1.png"
 import result2 from "../../images/תוצאות 2.png"
 import result3 from "../../images/תוצאות 3.png"
 import result4 from "../../images/תוצאות 4.png"
+import ScrollReveal from 'scrollreveal';
 const DrawCourse = () => {
+  useEffect(()=>{
+    ScrollReveal().reveal(`.${styles.title}`, {
+        duration: 1000,
+        distance: "30px",
+        origin: "right", // Start from the right side
+        easing: "ease-out",
+        reset:false,
+        viewFactor: 0.2,
+        interval: 300, // Delay between each element
+        delay: 200, // Delay before the animation starts
+        scale: 1, // Set scale to 1 or null
+      });
+      ScrollReveal().reveal(`.${styles.footerItem}`, {
+        duration: 1000,
+        distance: "30px",
+        origin: "top", // Start from the right side
+        easing: "ease-out",
+        reset:false,
+        viewFactor: 0.2,
+        interval: 300, // Delay between each element
+        delay: 200, // Delay before the animation starts
+        scale: 1, // Set scale to 1 or null
+      });
+  
+  },[])
   return (
     <div className={styles.container} dir="rtl">
       <div className={styles.header}>

@@ -1,8 +1,35 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './DrawSillabus.module.css';
 import PinkButton from '../SellButton/SellButton';
-
+import ScrollReveal from 'scrollreveal';
 const DrawSyllabus = () => {
+
+  useEffect(()=>{
+    ScrollReveal().reveal(`.${styles.title}`, {
+        duration: 1000,
+        distance: "30px",
+        origin: "right", // Start from the right side
+        easing: "ease-out",
+        reset:false,
+        viewFactor: 0.2,
+        interval: 300, // Delay between each element
+        delay: 200, // Delay before the animation starts
+        scale: 1, // Set scale to 1 or null
+      });
+      ScrollReveal().reveal(`.${styles.lessonNumber}`, {
+        duration: 1000,
+        distance: "30px",
+        origin: "top", // Start from the right side
+        easing: "ease-out",
+        reset:false,
+        viewFactor: 0.2,
+        interval: 300, // Delay between each element
+        delay: 200, // Delay before the animation starts
+        scale: 1, // Set scale to 1 or null
+      });
+  
+  },[])
+
   const chapters = [
     {
       title: 'פרק 1: הסבר מקיף על הקורס',

@@ -65,11 +65,11 @@
         direction:rtl
     }
     .description{
-        font-size:1.2rem;
+        font-size:1.1rem;
         font-family: "AssistantR";
         text-align: center;
-        margin:1% auto;
-        text-shadow: 1px 2px 2px rgba(120, 120, 120, 0.2);
+        margin:2% auto;
+  width:95%;
         direction:rtl
     }
     .more{

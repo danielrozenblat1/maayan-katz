@@ -54,7 +54,7 @@
   }
   
   .bottomContent {
-    bottom: 10%;
+    bottom: 15%;
     animation: slideInFromBottom 1s ease-out forwards;
   }
   

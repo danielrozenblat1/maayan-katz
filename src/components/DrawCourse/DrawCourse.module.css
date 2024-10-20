@@ -130,15 +130,13 @@
   text-align: center;
   padding: 15px;
   border-radius: 10px;
-  background-color: #fef0f5;
+
   transition: all 0.3s ease;
   flex: 1 1 calc(33.333% - 20px);
   margin-bottom: 20px;
 }
 
-.footerItem:hover {
-  background-color: #ffd1dc;
-}
+
 
 .footerItem h3 {
   color: #ff9a9e;
@@ -251,26 +249,28 @@
 
 @media (max-width: 450px) {
   .title {
-    font-size: 24px;
+    font-size: 2rem;
+    margin:1% auto;
   }
   .header {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    margin:1% auto;
   }
   .benefits {
     font-size: 14px;
   }
   .footerImage {
-    width: 120px;
-    height: 120px;
+    width: 250px;
+    height: 250px;
   }
 }
 
 @media (max-width: 350px) {
   .title {
-    font-size: 22px;
+    font-size: 1.8rem;
   }
   .subtitle {
-    font-size: 14px;
+    font-size: 1.1rem;
   }
   .courseType h3 {
     font-size: 18px;

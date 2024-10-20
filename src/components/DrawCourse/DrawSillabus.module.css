@@ -4,6 +4,7 @@
   max-width: 1200px;
   font-family: 'Assistant', sans-serif;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .title {

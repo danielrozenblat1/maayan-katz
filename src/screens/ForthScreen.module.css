@@ -27,6 +27,7 @@
   position: relative;
   overflow: hidden;
   font-size: 2.4rem;
+  font-family: "Assistant";
   text-align: center;
   max-width: fit-content;
 }
@@ -285,12 +286,12 @@
       font-size: 1.3rem;
   }
   .itemImage {
-      width: 60px;
-      height: 60px;
+      width: 70px;
+      height: 70px;
       margin-left: 10px;
   }
   .item p {
-      font-size: 0.85rem;
+      font-size: 1rem;
   }
 }
 
@@ -305,6 +306,6 @@
       font-size: 1.2rem;
   }
   .item p {
-      font-size: 0.8rem;
+      font-size: 0.95rem;
   }
 }
