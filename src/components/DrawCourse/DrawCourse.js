@@ -38,7 +38,7 @@ const DrawCourse = () => {
       </div>
 
       <div className={styles.mainContent}>
-        <h1 className={styles.title}>ולרגע האמת!</h1>
+        <h1 className={styles.title} id="על הקורס">ולרגע האמת!</h1>
 
 
       
