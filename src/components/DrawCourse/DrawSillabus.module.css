@@ -134,19 +134,16 @@
 
 @media (max-width: 850px) {
   .container {
-    max-width: 680px;
+    max-width: 780px;
   }
   .title {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
   .chapter {
-    flex: 0 1 290px;
+    flex: 0 1 310px;
   }
   .chapterTitle {
-    font-size: 1.2rem;
-  }
-  .lessonText {
-    font-size: 1.05rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -160,6 +157,10 @@
   .chapter {
     flex: 0 1 100%;
   }
+  .chaptersContainer {
+    width: 80%;
+    margin: 2% auto;
+  }
 }
 
 @media (max-width: 650px) {
@@ -172,6 +173,10 @@
   }
   .chapter {
     padding: 20px;
+  }
+  .chaptersContainer {
+    width: 80%;
+    margin: 2% auto;
   }
 }
 

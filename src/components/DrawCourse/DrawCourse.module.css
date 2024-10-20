@@ -230,6 +230,10 @@
   .benefits {
     padding: 20px;
   }
+  .footerImage {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -244,6 +248,10 @@
   }
   .footerItem h3 {
     font-size: 16px;
+  }
+  .footerImage {
+    width: 250px;
+    height: 250px;
   }
 }
 
