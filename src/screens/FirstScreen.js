@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import styles from './FirstScreen.module.css';
 import Loader from '../components/loader/Loader'; // נניח שזה הנתיב הנכון לקומפוננטת Loader
-import centerImage from "../images/מעיין כץ עבודות 12.png"
+import centerImage from "../images/מעיין כץ רקע ראשי.png"
 import rightImage from "../images/מעיין כץ עבודות 7.png"
 import leftImage from "../images/מעיין כץ עבודות 10.png"
+import maayanLogo from "../images/מעיין כץ לוגו.png"
 const FirstScreen = () => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
@@ -45,7 +46,8 @@ const FirstScreen = () => {
       </div>
       
       <div className={styles.topContent}>
-        <h2 className={styles.subtitle}>MAAYAN KATZ</h2>
+        {/* <h2 className={styles.subtitle}>MAAYAN KATZ</h2> */}
+        <div className={styles.center}><img className={styles.image} alt="מעיין כץ" src={maayanLogo}/></div>
       </div>
 
       <div className={styles.bottomContent}>

@@ -17,7 +17,15 @@
     display: flex;
     z-index: -1;
   }
-  
+  .center{
+    width:80%;
+    margin:0 auto;
+    justify-content: center;
+  }
+  .image{
+    object-fit: contain;
+    width: 100%;
+  }
   .backgroundImage {
     flex: 1;
     background-size: cover;
@@ -26,7 +34,7 @@
   }
   
   .centerImage {
-    background-image: url('../images/מעיין כץ עבודות 12.png');
+    background-image: url('../images/מעיין כץ רקע ראשי.png');
     background-position: 30% 70%;
     background-repeat: no-repeat;
   }

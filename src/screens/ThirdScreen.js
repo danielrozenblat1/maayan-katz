@@ -10,7 +10,7 @@ const ThirdScreen=()=>{
 
 return <>
 <div className={styles.title}>"מעיין איך הקורס תורם למניקוריסטיות?"</div>
-<div className={styles.description}>שאלה ששאלתי את עצמי לא פעם ולא פעמיים לפני שלקחתי קורס דיגיטלי שלימד אותי את אותו הדבר בדיוק!</div>
+<div className={styles.description}>שאלה ששאלתי את עצמי לא פעם ולא פעמיים לפני שלקחתי כמה וכמה קורסים דיגיטליים בתחילת דרכי, ובזכות זה ידעתי איך לדייק את עצמי לקורס מרוכז אחד!!</div>
 <div className={styles.description}>ועכשיו, כשאני כבר אחרי.. אני יכולה להגיד לך שלהוסיף את היכולת הזו לסל השירותים שלך יתרום לך מכמה וכמה סיבות..</div>
 {/* <div className={styles.description}>אמנם לדעת לצייר על ציפורן זה לא חובה אבל</div> */}
 <div className={styles.row}>

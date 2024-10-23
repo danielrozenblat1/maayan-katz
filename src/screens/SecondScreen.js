@@ -38,9 +38,9 @@ const SecondScreen = () => {
       </div>
       
       <div className={styles.wrapper}>
-        <div ref={presentationRef} className={styles.presentationEffect}>מעיין כץ מציגה</div>
+        <div ref={presentationRef} className={styles.presentationEffect}>DRAW LIKE A PRO</div>
       </div>
-      
+  
       <div className={styles.title}>
         קורס דיגיטלי לציור על ציפורניים
       </div>

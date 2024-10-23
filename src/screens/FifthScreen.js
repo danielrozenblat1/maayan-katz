@@ -7,7 +7,7 @@ const FifthScreen=()=>{
 
 
 return <>
-<div className={styles.description}>את לא מניקורסטית אבל מאוהבת בתחום ורוצה להתחיל ללמוד אותו</div>
+<div className={styles.description}>ואם את לא מניקורסטית אבל מאוהבת בתחום ורוצה להתחיל ללמוד אותו</div>
 <div className={styles.title}>הגעת למקום הנכון!</div>
 <div className={styles.description}>את יכולה</div>
 <div className={styles.row}>

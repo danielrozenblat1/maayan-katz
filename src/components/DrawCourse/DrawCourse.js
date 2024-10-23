@@ -63,7 +63,7 @@ const DrawCourse = () => {
         </section> */}
       </div>
       <div className={styles.header}>
-כדי להוציא לקוחות עם ציפורניים כאלה
+אז...כדי להוציא לקוחות עם ציפורניים מטורפות כאלה
      </div>
       <div className={styles.footer}>
  
