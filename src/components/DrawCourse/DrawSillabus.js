@@ -128,7 +128,7 @@ const DrawSyllabus = () => {
         ))}
       </div>
     </div>
-    <PinkButton text="מעיין, אני רוצה את הקורס!"/>
+    <PinkButton text="מעיין, אני רוצה את הקורס!" url="https://my.schooler.biz/s/83690/NAILPAINT"/>
    </>
 };
 
