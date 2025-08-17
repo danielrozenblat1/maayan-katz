@@ -1,0 +1,297 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+  padding: 1rem;
+  font-family: 'AssistantR', sans-serif;
+  direction: rtl;
+}
+
+.quate {
+  font-family: 'Assistant', sans-serif;
+  font-size: 1.6rem;
+  font-style: italic;
+  color: #ff9a9e;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 800px;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.specialEffect {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(255, 154, 158, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.specialEffect::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 50%,
+    transparent 100%
+  );
+  transform: rotate(-45deg);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% {
+    top: -50%;
+    left: -50%;
+  }
+  100% {
+    top: 150%;
+    left: 150%;
+  }
+}
+
+.title {
+  font-family: 'Assistant', sans-serif;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #ff9a9e;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper {
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.presentationEffect {
+  --scroll: 0;
+  font-family: 'Assistant', sans-serif;
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: #ff9a9e;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.presentationEffect::before,
+.presentationEffect::after {
+  content: '';
+  position: absolute;
+  width: calc(100% * var(--scroll, 0));
+  height: 2px;
+  background-color: #ff9a9e;
+  transition: width 0.3s ease;
+}
+
+.presentationEffect::before {
+  top: 0;
+  left: 0;
+}
+
+.presentationEffect::after {
+  bottom: 0;
+  right: 0;
+}
+
+.presentationEffect:hover {
+  transform: translateY(-2px);
+}
+
+.imagePlaceholder {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.subTitle {
+  font-size: 1.3rem;
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: 1.5rem;
+}
+
+.iconWrapper {
+  color: #ff9a9e;
+  align-self: center;
+}
+
+/* Media Queries */
+
+@media (max-width: 1250px) {
+  .quate {
+    font-size: 1.55rem;
+  }
+  .title {
+    font-size: 2.15rem;
+  }
+  .presentationEffect {
+    font-size: 1.85rem;
+  }
+  .subTitle {
+    font-size: 1.28rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .quate {
+    font-size: 1.5rem;
+  }
+  .title {
+    font-size: 2.1rem;
+  }
+  .presentationEffect {
+    font-size: 1.8rem;
+  }
+  .subTitle {
+    font-size: 1.26rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .quate {
+    font-size: 1.45rem;
+  }
+  .title {
+    font-size: 2.05rem;
+  }
+  .presentationEffect {
+    font-size: 1.75rem;
+  }
+  .subTitle {
+    font-size: 1.24rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .quate {
+    font-size: 1.4rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .presentationEffect {
+    font-size: 1.7rem;
+  }
+  .subTitle {
+    font-size: 1.22rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .quate {
+    font-size: 1.35rem;
+  }
+  .title {
+    font-size: 1.95rem;
+  }
+  .presentationEffect {
+    font-size: 1.65rem;
+  }
+  .subTitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .quate {
+    font-size: 1.3rem;
+  }
+  .title {
+    font-size: 1.9rem;
+  }
+  .presentationEffect {
+    font-size: 1.6rem;
+  }
+  .subTitle {
+    font-size: 1.18rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .quate {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 1.85rem;
+  }
+  .presentationEffect {
+    font-size: 1.55rem;
+  }
+  .subTitle {
+    font-size: 1.16rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .quate {
+    font-size: 1.2rem;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+  .presentationEffect {
+    font-size: 1.5rem;
+  }
+  .subTitle {
+    font-size: 1.14rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .quate {
+    font-size: 1.15rem;
+  }
+  .title {
+    font-size: 1.75rem;
+  }
+  .presentationEffect {
+    font-size: 1.45rem;
+  }
+  .subTitle {
+    font-size: 1.12rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .quate {
+    font-size: 1.1rem;
+  }
+  .title {
+    font-size: 1.7rem;
+  }
+  .presentationEffect {
+    font-size: 1.4rem;
+  }
+  .subTitle {
+    font-size: 1.1rem;
+  }
+}

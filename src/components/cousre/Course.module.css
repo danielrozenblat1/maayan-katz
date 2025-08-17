@@ -1,0 +1,189 @@
+.syllabusContainer {
+    font-family: 'AssistantR', sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+    background: linear-gradient(145deg, #ffffff, #fffaf5); /* Soft pink-cream gradient */
+    border-radius: 15px;
+    box-shadow: 
+      10px 10px 20px rgba(187, 187, 187, 0.3),
+      -10px -10px 20px rgba(255, 255, 255, 0.5),
+      inset 5px 5px 10px rgba(213, 213, 213, 0.4),
+      inset -5px -5px 10px rgba(205, 205, 205, 0.4);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    direction: rtl;
+  }
+  
+  .syllabusButton {
+    width: 100%;
+    padding: 15px 20px;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+    font-family: 'Assistant', sans-serif;
+    font-weight: bold;
+  }
+  
+  .buttonImage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-left: 15px;
+  }
+  
+  .buttonText {
+    flex-grow: 1;
+    text-align: right;
+  }
+  
+  .chevronIcon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+    margin-right: 15px;
+  }
+  
+  .syllabusContent {
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
+  
+  .syllabusContent > div {
+    padding: 0 20px 20px;
+  }
+  
+  .lessonContainer {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .lesson1 { background-color: #ffffff; }
+  .lesson2 { background-color: #fdfbfb; }
+  .lesson3 { background-color: #fbfbfd; }
+  .lesson4 { background-color: #fbfdfd; }
+  .lesson5 { background-color: #fdfdfb; }
+  .lesson6 { background-color: #fdfbfd; }
+  .lesson7 { background-color: #fbfdff; }
+  
+  .syllabusContent h2 {
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-family: 'Assistant', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    position: relative;
+    padding-left: 60px;
+    line-height: 1.4;
+  }
+  
+  .syllabusContent h2::before {
+    content: attr(data-number);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgba(255, 182, 193, 0.4);
+    line-height: 1;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 245, 245, 0.7);
+    border-radius: 50%;
+    box-shadow: 
+      inset 1px 1px 2px rgba(255, 244, 225, 0.2),
+      inset -1px -1px 2px rgba(255, 255, 255, 0.2);
+  }
+  
+  .syllabusContent ul {
+    list-style-type: none;
+    padding-right: 0;
+  }
+  
+  .syllabusContent li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #333;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    color: #ff69b4;
+  }
+  
+  .kitList {
+    list-style-type: none;
+    padding-right: 0;
+  }
+  
+  .kitList li {
+    margin-bottom: 10px;
+    color: #333;
+    position: relative;
+    padding-right: 20px;
+  }
+  
+  .kitList li::before {
+    content: '•';
+    position: absolute;
+    right: 0;
+    color: #ff69b4;
+  }
+  
+  @media (max-width: 650px) {
+    .syllabusContainer {
+      max-width: 90%;
+      margin: 10px auto;
+    }
+  
+    .syllabusButton {
+      font-size: 1rem;
+      padding: 10px 15px;
+    }
+  
+    .buttonImage {
+      width: 80px;
+      height: 80px;
+      margin-left: 10px;
+    }
+  
+    .chevronIcon {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+  
+    .syllabusContent h2 {
+      font-size: 0.9rem;
+      padding-left: 50px;
+    }
+  
+    .syllabusContent h2::before {
+      font-size: 2rem;
+      width: 40px;
+      height: 40px;
+    }
+  
+    .syllabusContent ul,
+    .syllabusContent p,
+    .kitList li {
+      font-size: 0.8rem;
+    }
+  }

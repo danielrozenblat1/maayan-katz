@@ -1,0 +1,289 @@
+.container {
+  font-family: 'Assistant', sans-serif;
+  margin: 0 auto;
+  text-align: right;
+  max-width: 1200px;
+
+}
+
+.header {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.title {
+  font-size: 48px;
+  color: #ff9a9e;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #ff9a9e, transparent);
+  transform: translateX(-100%);
+  animation: slideIn 1.5s forwards;
+}
+
+@keyframes slideIn {
+  to { transform: translateX(0); }
+}
+
+.subtitle {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #777;
+  font-family: "AssistantR";
+  font-weight: 300;
+}
+
+.mainContent {
+  margin-bottom: 40px;
+}
+
+.benefits {
+  background-color: #fef0f5;
+  padding: 25px;
+  border-radius: 15px;
+  font-family: "AssistantR";
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 1.6;
+  box-shadow: 0 5px 15px rgba(255, 105, 180, 0.1);
+}
+
+.coursesInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.courseType {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  flex: 1 1 300px;
+}
+
+.courseType:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 105, 180, 0.15);
+}
+
+.courseType h3 {
+  color: #ff9a9e;
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ff9a9e;
+}
+
+.courseType p {
+  position: relative;
+  padding-right: 30px;
+  margin-bottom: 10px;
+  font-family: "AssistantR";
+  color: #1f1f1f;
+}
+
+.courseType p::before {
+  content: '🎨';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-family: "AssistantR";
+}
+
+.footerImage {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.footerItem {
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+
+  transition: all 0.3s ease;
+  flex: 1 1 calc(33.333% - 20px);
+  margin-bottom: 20px;
+}
+
+
+
+.footerItem h3 {
+  color: #ff9a9e;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Media Queries */
+@media (max-width: 1250px) {
+  .container {
+    max-width: 1100px;
+  }
+  .title {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .container {
+    max-width: 1000px;
+  }
+  .title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .container {
+    max-width: 900px;
+  }
+  .title {
+    font-size: 36px;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 950px) {
+  .container {
+    max-width: 800px;
+  }
+  .title {
+    font-size: 34px;
+  }
+  .courseType {
+    flex: 1 1 calc(50% - 15px);
+  }
+}
+
+@media (max-width: 850px) {
+  .container {
+    max-width: 700px;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .benefits {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+    max-width: 600px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .subtitle {
+    font-size: 16px;
+  }
+  .courseType h3 {
+    font-size: 20px;
+  }
+  .footerItem {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    padding: 0 15px;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .courseType {
+    flex: 1 1 100%;
+  }
+  .benefits {
+    padding: 20px;
+  }
+  .footerImage {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 550px) {
+  .title {
+    font-size: 26px;
+  }
+  .subtitle {
+    font-size: 15px;
+  }
+  .courseType p {
+    font-size: 15px;
+  }
+  .footerItem h3 {
+    font-size: 16px;
+  }
+  .footerImage {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 2rem;
+    margin:1% auto;
+  }
+  .header {
+    font-size: 1.2rem;
+    margin:1% auto;
+  }
+  .benefits {
+    font-size: 14px;
+  }
+  .footerImage {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 350px) {
+  .title {
+    font-size: 1.8rem;
+  }
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  .courseType h3 {
+    font-size: 18px;
+  }
+  .footerItem {
+    flex: 1 1 100%;
+  }
+}

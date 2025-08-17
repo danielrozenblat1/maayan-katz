@@ -1,0 +1,320 @@
+/* SecondScreen.module.css */
+.container {
+  max-width: 1200px;
+  margin: 2% auto;
+  direction: rtl;
+  padding: 0 20px;
+}
+
+.mainTitle, .solutionTitle {
+  text-align: center;
+  font-family: "Assistant";
+  margin: 2% auto;
+  font-size: 2.2rem;
+  color: #4a4a4a;
+}
+
+.title {
+  display: block;
+  margin: 2rem auto;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(45deg, #ff9a9e, #ff9a9d85);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(199, 21, 133, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  font-size: 2.4rem;
+  font-family: "Assistant";
+  text-align: center;
+  max-width: fit-content;
+}
+
+.title::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 50%,
+    transparent 100%
+  );
+  transform: rotate(-45deg);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% {
+    top: -50%;
+    left: -50%;
+  }
+  100% {
+    top: 150%;
+    left: 150%;
+  }
+}
+
+.subtitle {
+  font-size: 1.6rem;
+  font-family: "AssistantR";
+  text-align: center;
+  margin: 1% auto;
+  text-shadow: 1px 4px 2px rgba(120, 120, 120, 0.2);
+  direction: rtl;
+}
+
+.concernsContainer, .solutionsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.pairContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.item:nth-child(4n+1) {
+  background: linear-gradient(135deg, #ffffff, #faf0f4);
+}
+
+.item:nth-child(4n+2) {
+  background: linear-gradient(135deg, #fcfcfc, #f7e8ee);
+}
+
+.item:nth-child(4n+3) {
+  background: linear-gradient(135deg, #f9f9f9, #f5e0e8);
+}
+
+.item:nth-child(4n) {
+  background: linear-gradient(135deg, #f7f7f7, #f2d8e2);
+}
+
+.itemImage {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-left: 15px;
+}
+
+.item p {
+  flex: 1;
+  font-family: "AssistantR";
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #4a4a4a;
+}
+
+.item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 1250px) {
+  .container {
+      max-width: 1080px;
+  }
+  .title {
+      font-size: 2.3rem;
+  }
+  .subtitle {
+      font-size: 1.55rem;
+  }
+  .mainTitle, .solutionTitle {
+      font-size: 2.1rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .container {
+      max-width: 980px;
+  }
+  .title {
+      font-size: 2.2rem;
+  }
+  .subtitle {
+      font-size: 1.5rem;
+  }
+  .mainTitle, .solutionTitle {
+      font-size: 2rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .container {
+      max-width: 880px;
+  }
+  .title {
+      font-size: 2.1rem;
+  }
+  .subtitle {
+      font-size: 1.45rem;
+  }
+  .mainTitle, .solutionTitle {
+      font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .container {
+      max-width: 780px;
+  }
+  .title {
+      font-size: 2rem;
+  }
+  .subtitle {
+      font-size: 1.4rem;
+  }
+  .mainTitle, .solutionTitle {
+      font-size: 1.8rem;
+  }
+  .item {
+      width: 350px;
+  }
+  .itemImage {
+      width: 70px;
+      height: 70px;
+  }
+  .item p {
+      font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .container {
+      max-width: 680px;
+  }
+  .title {
+      font-size: 1.9rem;
+  }
+  .subtitle {
+      font-size: 1.35rem;
+  }
+  .mainTitle, .solutionTitle {
+      font-size: 1.7rem;
+  }
+  .item {
+      width: 300px;
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+      max-width: 580px;
+      padding: 0 15px;
+  }
+  .title {
+      font-size: 1.8rem;
+  }
+  .subtitle {
+      font-size: 1.3rem;
+  }
+  .mainTitle, .solutionTitle {
+      font-size: 1.6rem;
+  }
+  .item {
+      width: 100%;
+  }
+  .itemImage {
+      width: 65px;
+      height: 65px;
+      margin-left: 12px;
+  }
+  .item p {
+      font-size: 0.9rem;
+  }
+  .item p {
+    font-size: 1.1rem;
+}
+}
+
+@media (max-width: 650px) {
+  .title {
+      font-size: 1.7rem;
+  }
+  .subtitle {
+      font-size: 1.25rem;
+  }
+  .mainTitle, .solutionTitle {
+      font-size: 1.5rem;
+  }
+  .item p {
+    font-size: 1.1rem;
+}
+}
+
+@media (max-width: 550px) {
+  .title {
+      font-size: 1.6rem;
+  }
+  .subtitle {
+      font-size: 1.2rem;
+  }
+  .mainTitle, .solutionTitle {
+      font-size: 1.4rem;
+  }
+  .item p {
+    font-size: 1.1rem;
+}
+}
+
+@media (max-width: 450px) {
+  .title {
+      font-size: 1.5rem;
+  }
+  .subtitle {
+      font-size: 1.15rem;
+  }
+  .mainTitle, .solutionTitle {
+      font-size: 1.3rem;
+  }
+  .itemImage {
+      width: 70px;
+      height: 70px;
+      margin-left: 10px;
+  }
+  .item p {
+      font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .title {
+      font-size: 1.4rem;
+  }
+  .subtitle {
+      font-size: 1.1rem;
+  }
+  .mainTitle, .solutionTitle {
+      font-size: 1.2rem;
+  }
+  .item p {
+      font-size: 0.95rem;
+  }
+}

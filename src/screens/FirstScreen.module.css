@@ -1,0 +1,217 @@
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .imageContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: -1;
+  }
+  .center{
+    width:80%;
+    margin:0 auto;
+    justify-content: center;
+  }
+  .image{
+    object-fit: contain;
+    width: 100%;
+  }
+  .backgroundImage {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .centerImage {
+    background-image: url('../images/מעיין כץ רקע ראשי.png');
+    background-position: 30% 70%;
+    background-repeat: no-repeat;
+  }
+  
+  .leftImage, .rightImage {
+    display: none;
+  }
+  
+  .topContent, .bottomContent {
+    text-align: center;
+    padding: 0.2rem;
+    border-radius: 10px;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    opacity: 0;
+  }
+  
+  .topContent {
+    top: 15vh;
+    animation: slideInFromTop 1s ease-out forwards;
+  }
+  
+  .bottomContent {
+    bottom: 15%;
+    animation: slideInFromBottom 1s ease-out forwards;
+  }
+  
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .topContent::before, .bottomContent::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+    transform: rotate(30deg);
+  }
+  
+  .title {
+    font-family: 'Assistant';
+    font-size: 1rem;
+    direction: rtl;
+    color: black;
+  }
+  
+  .subtitle {
+    font-family: "Dancing";
+    font-size: 2rem;
+    direction: rtl;
+    color: black;
+  }
+  
+  /* Responsive breakpoints */
+  @media (min-width: 350px) {
+    .topContent, .bottomContent {
+      width: 90%;
+    }
+    .title {
+      font-size: 1.2rem;
+    }
+    .subtitle {
+      font-size: 2.2rem;
+    }
+  }
+  
+  @media (min-width: 450px) {
+    .topContent, .bottomContent {
+      width: 85%;
+    }
+  }
+  
+  @media (min-width: 550px) {
+    .topContent, .bottomContent {
+      width: 75%;
+    }
+    .subtitle {
+      font-size: 3rem;
+    }
+    
+    .imageContainer {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .backgroundImage {
+      flex: 1;
+    }
+    
+    .leftImage, .rightImage {
+      display: block;
+    }
+    
+    .leftImage {
+      background-image: url('../images/מעיין כץ עבודות 7.png');
+    }
+    
+    .rightImage {
+      background-image: url('../images/מעיין כץ עבודות 10.png');
+    }
+  }
+  
+  @media (min-width: 650px) {
+    .topContent, .bottomContent {
+      width: 70%;
+    }
+  }
+  
+  @media (min-width: 750px) {
+    .topContent, .bottomContent {
+      width: 65%;
+    }
+  }
+  
+  @media (min-width: 850px) {
+    .topContent, .bottomContent {
+      width: 60%;
+    }
+    .subtitle {
+      font-size: 3.5rem;
+    }
+  }
+  
+  @media (min-width: 950px) {
+    .topContent, .bottomContent {
+      width: 55%;
+    }
+  }
+  
+  @media (min-width: 1050px) {
+    .topContent, .bottomContent {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 1150px) {
+    .topContent, .bottomContent {
+      width: 45%;
+    }
+  }
+  
+  @media (min-width: 1250px) {
+    .topContent, .bottomContent {
+      width: 30%;
+    }
+    .subtitle {
+      font-size: 2.5rem;
+    }
+    .title {
+      font-family: 'Assistant';
+      font-size: 1.2rem;
+      direction: rtl;
+      color: black;
+    }
+  }
